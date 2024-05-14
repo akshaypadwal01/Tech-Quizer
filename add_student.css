@@ -1,0 +1,85 @@
+ /* Some basic styling for demonstration */
+ body {
+  background-image: url('IMG/background1.jpg'); /* Specify the path to your background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+    width: 650px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: calc(50% - 5px);
+}
+button:hover {
+    background-color: #45a049;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.selected {
+    background-color: #f2f2f2;
+}
+
+
+
+  /* Responsive Adjustments  */
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Adjustments for the container */
+    .container {
+      width: 90%; /* Make container width 90% of the viewport width */
+      max-width: 400px; /* Set maximum width for smaller screens */
+    }
+  
+    /* Adjustments for the button container */
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    /* Adjustments for the buttons */
+    button {
+      width: 100%; /* Make buttons full width */
+      margin-bottom: 10px; /* Add margin between buttons */
+    }
+  
+    /* Adjustments for the table */
+    table {
+      font-size: 14px; /* Decrease font size for better fit on small screens */
+    }
+  }
+  

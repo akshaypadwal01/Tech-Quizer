@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student Panel</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="student.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+
+</head>
+<body>
+  <!--  Navbar -->
+  <header>
+    <div class="logo">
+      <img src="IMG/exam_logo.jpg" alt="Exam Logo">
+      <h1>Tech Quizer</h1>
+    </div>
+    <nav>
+      <ul>
+        <button id="fullscreen-button"><i class="fas fa-expand"title="Full Screen"></i></button>
+          </li>
+        <li><a href="index.html"><i class="fas fa-sign-out-alt"title="Logout"></i></a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- student Info Section -->
+  <div class="student-info">
+    <div class="logo-container">
+        <div class="logo">
+            <img src="IMG/student.png" title="student Profile" alt="student Logo" >
+            <h3 class="student-name" id="studentName"></h3>
+        </div>
+        
+    </div>
+    
+</div>
+    <div class="student-links">
+      <h2>Online Exams</h2>
+      <h5>Select the Online Exam you'd like to attempt</h5>
+    </div>
+
+  
+  
+
+  <!-- Sidebar Section -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <ul>
+        <li><a href="onlineexam.html"> Online Exam </a></li>
+        <li><a href="#">Notice Board</a></li>
+        <li><a href="setting.html">Setting</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="content">
+    <a href="onlineexam.html">
+    <button title="Click to View Exam List">EXAM LIST</button>
+    </a>
+  </div>
+  
+  <script>
+    const fullscreenButton = document.getElementById('fullscreen-button');
+  
+    // Function to toggle fullscreen mode
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen(); // Enter fullscreen mode
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen(); // Exit fullscreen mode
+        }
+      }
+    }
+  
+    // Event listener for the button click
+    fullscreenButton.addEventListener('click', toggleFullscreen);
+  </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector('.menu-btn');
+  const sidebar = document.querySelector('.sidebar');
+
+  menuBtn.addEventListener('click', function () {
+    sidebar.classList.toggle('show');
+    menuBtn.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

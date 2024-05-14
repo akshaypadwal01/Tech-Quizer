@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Student to Online Exam</title>
+<link rel="stylesheet" href="add_student.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Student </h2>
+        <form id="studentForm">
+            <label for="studentId">Student ID:</label><br>
+            <input type="text" id="studentId" name="studentId"  required><br>
+            <label for="studentName">Student Name:</label><br>
+            <input type="text" id="studentName" name="studentName" required><br>
+            <label for="examName">Exam Name:</label><br>
+            <input type="text" id="examName" name="examName" required><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br>
+            <label for="mobile">Mobile No.:</label><br>
+            <input type="text" id="mobile" name="mobile" required><br>
+            
+            <div class="button-container">
+                <button type="button" onclick="addStudent()">Add Student</button>
+                <button type="button" onclick="removeSelectedStudent()">Remove Student</button>
+            </div>
+        </form>
+        <h3>Students Added:</h3>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Exam Name</th>
+                    <th>Email</th>
+                    <th>Mobile No.</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+    <script src="add_student.js">
+         </script>
+</body>
+</html>

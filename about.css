@@ -1,0 +1,472 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Cover the entire viewport */
+    background-color: #485ef3b9;
+    }
+  
+  
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      background-color: transparent; /* Initially transparent */
+      transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .header-scroll {
+      background-color: #8cac6a; /* Background color when scrolled */
+  }
+  
+  
+  
+  
+  
+  
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .title h1 {
+    margin: 10px;
+    margin-right: 495px; /* Adjust the margin to separate the logo and title */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  }
+
+  .title {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  
+
+  .logo img {
+    border-radius: 50%; 
+    width: 70px; 
+    height: 70px; 
+    object-fit: cover; 
+  }
+
+
+  
+
+  nav ul {
+    list-style-type: none;
+    margin-left: -173px;
+    padding: 0;
+    display: flex; /* Display links as flex items */
+    white-space: nowrap; /* Prevent line breaks */
+    font-size: 20px;
+  }
+  
+  nav ul li {
+    margin-right: 2px; /* Set margin between links */
+    padding-right: 30px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 10px; /* Remove margin from the last link */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Set padding for the links */
+  }
+
+
+
+
+  .container3{
+      display: flex;
+      margin-top: 70px;
+    }
+
+    .content-container3 {
+      flex: 2; /* Adjust width of content relative to the image */
+      margin-top: 22px;
+      margin-right: 80px;
+    }
+    
+    .content-container3 p{
+      margin-left: 80px;
+      font-size:  25px;
+      color: #ccc3c3;
+      line-height: 44px;
+    }
+        
+    .content-container3 h1{
+      margin-left: 36px;
+      font-size:  65px;
+      color: #fff;
+      margin-top: 40px;
+    }
+  
+  .image-container0 {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between image and content */
+  }
+  
+  .image-container0 img {
+        width: 550px;
+        height: 450px;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .content-container p{
+      margin-left: 36px;
+      font-size:  30px;
+    }
+
+
+  
+
+  
+  .upper-side {
+    order: -1; /* Places these flex items above the sidebar */
+  }
+
+  .content button {
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: -120px;
+  }
+  
+  .content button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  
+
+    .flex-item {
+        text-align: center; /* Center text within the flex item */
+      }
+      
+  
+
+      
+      /* Apply border only to flex items within the upper-side flex container */
+.flex-container.upper-side .flex-item {
+    border: 1px solid #000; /* Example border styling: 2px solid black */
+    border-radius: 20px;
+    padding-top: 12px;
+    margin: 0px 145px;
+    background-color: white;
+    margin-top: 25px;
+  }
+  
+  
+  
+  .icon-container i {
+    font-size: 45px; /* Adjust the size as needed */
+  }
+  
+  .content {
+    display: flex;
+    margin-top: 70px;
+  }
+  
+  
+  .flex-container.upper-side {
+    justify-content: flex-start;
+    height: 260px;
+    width: 280px;
+  }
+  
+  .flex-container.lower-side {
+    justify-content: flex-end;
+    height: 250px;
+    width: 280px;
+  }
+  
+  
+
+
+/*1  */
+
+.container {
+    display: flex;
+    margin-top: 70px;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between image and content */
+  }
+  
+  .image-container img {
+        width: 409px;
+        height: 365px;
+        border-radius: 30px;
+        
+     }
+  
+  .content-container {
+    flex: 2; /* Adjust width of content relative to the image */
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .content-container p{
+    margin-right: 36px;
+    font-size:  17px;
+  }
+  .content-container h2{
+    margin-right: 36px;
+    font-size:  37px;
+  }
+  
+  /* 2 */
+  
+.container2 {
+  display: flex;
+  margin-top: 70px;
+}
+
+.image-container2 {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between image and content */
+}
+
+.image-container2 img {
+      width: 409px;
+      height: 365px;
+      border-radius: 30px;
+   }
+
+.content-container2 {
+  flex: 2; /* Adjust width of content relative to the image */
+  margin-top: 22px;
+  margin-right: 80px;
+}
+
+.content-container2 p{
+  margin-left: 36px;
+  font-size:  17px;
+}
+.content-container2 h2{
+  margin-left: 36px;
+  font-size:  37px;
+}
+
+.content-container2 h1{
+  margin-left: 36px;
+  font-size:  65px;
+  color: #fff;
+  margin-top: 70px;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #26bbbc;
+  color: white;
+  padding: 20px 0;
+  margin: -8px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; 
+  height: 80px; 
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+}
+
+.left-section img.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.heading1 {
+  font-size: 24px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-info {
+  margin-right: 20px;
+  margin-top: 24px;
+}
+.contact-info .info p {
+  margin-bottom: -5px; /* Adjust the value as needed */
+}
+.contact-info .info {
+  margin-top: 10px;
+}
+
+.copbut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-icons {
+  display: flex; /* Make the icons flex items */
+  align-items: center; /* Center them vertically */
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.social-media-icons button {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+}
+
+.social-media-icons button img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  margin-left: 26px;
+  margin-top: -30px;
+}
+
+.useful-links {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+  margin-right: -256px;
+  margin-top: 1px;
+}
+
+.useful-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.useful-links ul li a {
+  margin-right: 15px;
+  color: rgb(64, 64, 246);
+}
+.useful-links ul li a:hover {
+  color: red; /* Change the color when hovered over */
+}
+
+.buttons{
+	justify-self: flex-end;
+	align-self: flex-start;
+	margin-right: 170px;
+	display: flex;
+	gap: 20px;
+  }
+  .buttons button{
+	background-color: transparent;
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+	width:  40px;
+	border: none;
+	border-radius: 5px;
+	transition: transform 100ms ease-in-out;
+  }
+  .buttons button:hover{
+	background-color: green;
+	transform: scale(1.1);
+  }
+  .buttons button img{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+  }
+  button img:hover{
+	filter: invert(100%);
+  }
+
+
+
+
+
+
+
+  /* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  body {
+      padding: 100px; /* Adjust padding for smaller screens */
+  }
+
+  .title h1 {
+      margin-right: 50px; /* Adjust margin for smaller screens */
+  }
+  
+  .logo img {
+      width: 40px; /* Adjust logo size for smaller screens */
+      height: 40px;
+  }
+  
+  .exam-platform {
+      font-size: 24px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+      width: auto; /* Allow the width to adjust based on content */
+      max-width: 90%; /* Limit width to avoid overflow on smaller screens */
+      left: 5%; /* Adjust left position for smaller screens */
+  }
+  
+  .feature-block {
+      font-size: 18px; /* Adjust font size for smaller screens */
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      width: auto; /* Allow the width to adjust based on content */
+      max-width: 90%; /* Limit width to avoid overflow on smaller screens */
+  }
+  
+  nav ul {
+      margin-left: -100px; /* Adjust margin for smaller screens */
+  }
+}
+
+
+

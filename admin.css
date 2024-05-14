@@ -1,0 +1,519 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+/* Style for the header */
+header {
+  background-color: #877b7b;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+nav ul li a i {
+  margin-left: 10px; /* Adjust the gap between the icon and text */
+}
+
+
+
+.logo img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#fullscreen-button {  
+  padding-top: 5px;
+  font-size: 22px; 
+  cursor: pointer;
+  background-color: #877b7b;
+  border: none; /* Remove border */
+}
+#fullscreen-button i {
+  padding: 10px; /* Add padding to icon for spacing */
+  color: white; /* Text color for icon */
+}
+
+
+/* Style for the admin info section */
+.admin-info {
+  
+  margin-top: 70px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid #ccc;
+  margin-right: 248.7svb;
+  
+}
+
+
+
+
+.admin-info img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.admin-details {
+  display: flex;
+  align-items: flex-start
+}
+
+.admin-details img {
+  border-radius: 50%;
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: -100px;
+}
+
+.admin-links {
+  padding-left: 80px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+  
+.logo-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo {
+  margin-right: 136px; /* Adjust as needed */
+  
+}
+
+.bar {
+display: flex;
+}
+
+
+
+/* Style for the sidebar section */
+.sidebar {
+  background-color: #f0f0f0;
+  width: 221px;
+  height: 700px;
+  padding: 50px;
+  float: left;
+  flex: 0 0 200px; /* Fixed width sidebar */
+  margin-right: 28px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-bottom: 7px;
+  margin-left: -30px;
+  margin-top: 20px;
+  background-color: rgb(140, 229, 137);
+}
+
+.sidebar-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  flex: 1;   
+  justify-content: space-between;
+  padding-left: 50px;
+  display: flex;
+  margin-bottom: 30px;
+
+}
+
+.flex-item {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  scroll-behavior: smooth;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1.3px solid #7cd1e6;
+}
+
+
+.button {
+padding: 10px;
+margin-top: 10px;
+}
+
+
+.upper-side {
+order: -1; /* Places these flex items above the sidebar */
+}
+
+.lower-side {
+order: 1; /* Places these flex items below the sidebar */
+}
+
+
+.content button {
+padding: 10px 20px;
+background-color: #0074D9;
+color: #FFF;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+cursor: pointer;
+margin-right: -120px;
+}
+
+.content button:hover {
+background-color: #0056b3;
+}
+
+
+.flex-container {
+display: flex;
+justify-content: center; /* Center items horizontally */
+align-items: center; /* Center items vertically */
+flex-direction: column;
+flex: 1;
+}
+
+.flex-item {
+text-align: center; /* Center text within the flex item */
+}
+
+.icon-container i {
+font-size: 45px; /* Adjust the size as needed */
+}
+
+.content {
+display: flex;
+}
+
+
+.flex-container.upper-side {
+justify-content: flex-start;
+height: 260px;
+width: 280px;
+}
+
+.flex-container.lower-side {
+justify-content: flex-end;
+height: 250px;
+width: 280px;
+}
+
+.upper-side {
+height: 200px;
+background-color: #dcdcdc;
+}
+.lower-side {
+height: 150px;
+background-color: #dcdcdc;
+}
+
+
+/* CSS for icon containers */
+.icon-container {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px 100px / 120px;
+border-radius: 10px; 
+background-color: #bbe3b9; 
+margin-bottom: 10px; /* Optional: Add spacing between the icon and text */
+}
+
+/* CSS for Font Awesome icons */
+.icon-container .fas {
+color: #2e10ee; /* Color of the Font Awesome icons */
+}
+
+/* CSS for SVG icons */
+.icon-container svg {
+fill: #2c0ef0; /* Color of the SVG icons */
+}
+
+
+.admin-links {
+background-color: #f7f8ee; /* Background color of the navbar */
+overflow: hidden; /* Ensure proper display of floated elements */
+}
+
+.admin-links a {
+float: left; /* Float the anchor elements to the left */
+display: block; /* Display the anchor elements as blocks */
+color: white; /* Text color of the anchor elements */
+text-align: center; /* Center align the text */
+padding: px 1px; /* Add padding to the anchor elements */
+text-decoration: none; /* Remove underline from anchor elements */
+}
+
+.admin-links a:hover {
+background-color: #ddd; /* Background color of the anchor elements on hover */
+color: black; /* Text color of the anchor elements on hover */
+}
+
+
+.admin-info {
+display: flex;
+align-items: flex-start;
+justify-content: space-between; /* Aligns items with space between them */
+background-color: #f0f0f0;
+border: 2px solid #ccc;
+margin-top: 68px;
+}
+
+.admin-links {
+display: flex; /* Use flexbox for the links container */
+align-items: center; /* Align items vertically */
+margin-left: 220px;
+margin-top: -71px;
+height: 70px;
+border: 1px solid #ccc;
+padding-left: 800px;
+}
+
+.admin-links a {
+text-decoration: none;
+color: black;
+padding: 10px; /* Add padding to the links */
+border-radius: 10px;
+border: 1px solid #24b879;
+}
+
+.admin-links a:not(:first-child) {
+margin-left: 20px; /* Add margin to all links except the first one */
+}
+
+
+.logo-container {
+background-image: url('IMG/background1.jpg');
+background-size: cover; /* Adjust as needed */
+background-position: center; /* Adjust as needed */
+}
+
+.logo-container {
+  width: 220px; /* Set width */
+  height: 68px; /* Set height */
+}
+
+
+.flex-item {
+text-align: center;
+transition: transform 2.3s ease;
+cursor: pointer;
+
+}
+.icon-container {
+font-size: 36px;
+color: #000;
+}
+a {
+text-decoration: none;
+color: #000;
+cursor: pointer;
+}
+.flex-item.clicked {
+transform: scale(1.1);
+background-color: #d4f41e;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hidden off-screen */
+  width: 200px;
+  height: 59%;
+  background-color: #333;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  border-radius: 20px;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 25px;
+  left: 10px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.admin-links {
+  margin-left: 172px;
+  padding-left: 1px;
+}
+
+header {
+height: 71px;
+}
+
+
+.logo-container {
+width: 179px;
+height: 68px;
+}
+.admin-info img {
+width: 64px;
+height: 67px;
+}
+
+.logo {
+margin-right: 100px;
+margin-left: 48px;
+}
+
+.logo {
+align-items: center;
+white-space: nowrap; /* Prevents wrapping */
+}
+
+.logo img {
+max-width: 40px; /* Adjust max-width as needed */
+height: auto;
+margin-right: 8px; /* Adjust margin as needed */
+}
+
+.logo h1 {
+font-size: 24px; /* Adjust the font size as needed */
+}
+
+.admin-links {
+white-space: nowrap; /* Prevents wrapping */
+}
+
+.admin-links a {
+font-size: 13px;
+margin-right: -17px;
+color: black;
+background-color: rgb(56, 193, 227);
+border-radius: 10px;
+margin-left: 11px;
+}
+.admin-links a:last-child {
+margin-right: 0; /* Remove margin from last link */
+}
+
+.logo-container img {
+max-width: 117px;
+height: 60px;
+margin-left: -47px;
+width: 60px;
+}
+
+#fullscreen-button {
+padding-top: 4px;
+font-size: 20px;
+margin-left: -58px;
+}
+
+.flex-container.upper-side {
+height: 244px;
+margin-left: -66px;
+margin-right: -21px;
+}
+
+
+.flex-container.lower-side {
+height: 244px;
+margin-left: -66px;
+margin-right: -21px;
+}
+.content button {
+border-radius: 7px;
+font-size: 12px;
+}
+
+}
+
+
+
+

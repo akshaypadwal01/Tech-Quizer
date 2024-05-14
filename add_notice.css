@@ -1,0 +1,61 @@
+/* Some basic styling for demonstration */
+body {
+  background-image: url('IMG/background3.png'); /* Specify the path to your background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+.container {
+  width: 297px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: calc(50% - 5px);
+}
+button:hover {
+  background-color: #45a049;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+.selected {
+  background-color: #f2f2f2;
+}
+
+
+
+

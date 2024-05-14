@@ -1,0 +1,363 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+/* Style for the header */
+header {
+  background-color: #877b7b;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+nav ul li a i {
+  margin-left: 15px; /* Adjust the gap between the icon and text */
+}
+
+
+
+.logo img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#fullscreen-button {  
+  padding-top: 5px;
+  font-size: 22px; 
+  cursor: pointer;
+  background-color: #877b7b;
+  border: none; /* Remove border */
+}
+#fullscreen-button i {
+  padding: 10px; /* Add padding to icon for spacing */
+  color: white; /* Text color for icon */
+}
+
+/* Style for the student info section */
+.student-info {
+  
+  margin-top: 70px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid #ccc;
+  margin-right: 248.7svb;
+  
+}
+
+
+
+
+.student-info img {
+  border-radius: 50%;
+  width: 72px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.student-details {
+  display: flex;
+  align-items: flex-start
+}
+
+.student-details img {
+  border-radius: 50%;
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: -100px;
+}
+
+
+
+  
+.logo-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo {
+  margin-right: 136px; /* Adjust as needed */
+  
+}
+
+.bar {
+display: flex;
+}
+
+
+
+/* Style for the sidebar section */
+.sidebar {
+  background-color: #f0f0f0;
+  width: 221px;
+  height: 700px;
+  padding: 50px;
+  float: left;
+  flex: 0 0 200px; /* Fixed width sidebar */
+  margin-right: 28px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-bottom: 33px;
+  margin-left: -33px;
+  margin-top: 2px;
+  background-color: rgb(105, 247, 96);;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+transform: translateY(-0.25em);
+  
+}
+
+
+
+.sidebar-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.content button {
+padding: 10px 20px;
+background-color: #0074D9;
+color: #FFF;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+cursor: pointer;
+margin-right: -120px;
+}
+
+.content button:hover {
+background-color: #0056b3;
+}
+
+.student-info {
+
+margin-top: 68px;
+}
+
+.student-links {
+display: flex; /* Use flexbox for the links container */
+justify-content: flex-start;
+margin-left: 220px;
+margin-top: -74px;
+height: 72.5px;
+border: 2px solid #ccc;
+padding-left:30px;
+flex-direction: column;
+padding: 10px; 
+}
+.student-links h2 {
+order: 1; /* Make h2 appear first */
+font: 1.5em sans-serif;
+}
+
+.student-links h5 {
+order: 2; /* Make h4 appear second */
+color: #877b7b;
+font: 1em sans-serif;
+}
+
+
+.logo-container {
+background-image: url('IMG/background0.png');
+background-size: cover; /* Adjust as needed */
+background-position: center; /* Adjust as needed */
+}
+
+
+.logo-container {
+  width: 220px; /* Set width */
+  height: 68px; /* Set height */
+}
+
+
+.flex-item {
+text-align: center;
+transition: transform 2.3s ease;
+cursor: pointer;
+
+}
+.icon-container {
+font-size: 36px;
+color: #000;
+}
+a {
+text-decoration: none;
+color: #000;
+cursor: pointer;
+}
+.flex-item.clicked {
+transform: scale(1.1);
+background-color: #d4f41e;
+}
+
+
+@media only screen and (max-width: 600px) {
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hidden off-screen */
+  width: 200px;
+  height: 59%;
+  background-color: #333;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  border-radius: 20px;
+}
+
+.sidebar ul li {
+  margin-top: 36px;
+}
+.sidebar.show {
+  left: 0;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 25px;
+  left: 10px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.student-links {
+  margin-left: 150px;
+  padding-left: 1px;
+}
+
+.student-links h2 {
+font-size: 23px;
+}
+
+.student-links h5 {
+font-size: 13px;
+}
+
+header {
+height: 71px;
+}
+
+
+.logo-container {
+width: 150px;
+height: 68px;
+}
+.student-info img {
+width: 64px;
+height: 67px;
+}
+
+.logo {
+margin-right: 100px;
+margin-left: 48px;
+}
+
+.logo {
+align-items: center;
+white-space: nowrap; /* Prevents wrapping */
+}
+
+.logo img {
+max-width: 40px; /* Adjust max-width as needed */
+height: auto;
+margin-right: 8px; /* Adjust margin as needed */
+}
+
+.logo h1 {
+font-size: 24px; /* Adjust the font size as needed */
+}
+
+.logo-container img {
+max-width: 117px;
+height: 60px;
+margin-left: -47px;
+width: 60px;
+}
+
+.content button {
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+#fullscreen-button {
+padding-top: 4px;
+font-size: 20px;
+margin-left: -63px;
+}
+}

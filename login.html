@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    
+    <div class="header">
+        <a href="#default" class="logo"> <img src="IMG/Exam logo.jpg" alt="Exam Logo">Tech Quizer</a>
+        <div class="header-right">
+            <!-- Toggle button for mobile -->
+            <button class="toggle-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <!-- Navigation links -->
+            <div class="header-links" id="header-links">
+                <a class="active" href="index.html">Home</a>
+                <a class="active" href="about.html">About us</a>
+                <a class="active" href="signup.html">Sign up</a>
+                <a class="active" href="login.html">login</a>
+            </div>
+        </div>
+    </div>
+
+<div class="login-form">
+    <form id="loginForm">
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <label><b>Account Type:</b></label>
+            <select class="form-control" id="accountType" required>
+                <option value=""></option>
+
+                <option value="admin" >Admin</option>
+                <option value="student">Student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label><b>User Name:</b></label>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <label><b>Password:</b></label>
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary btn-block" onclick="login()">Log in</button>
+        </div>
+        <div class="clearfix">
+            <a href="#" class="float-right"><b>Forgot Password?</b></a>
+            <a href="signup.html"><b>Create an Account</b></a>
+
+        </div>  
+        <!-- <p class="text-center"><a href="signup.html">Create an Account</a></p> -->
+    </form>
+</div>
+
+<script src="login.js"></script>
+
+<footer>
+    <div class="foot">
+        <div class="left-section">
+            <img src="IMG/Exam logo.jpg" alt="Footer Logo" class="logo">
+            <h1 class="heading1">Tech Quizer</h1>
+        </div>
+        <div class="footer-content">
+            <div class="useful-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <div class="info">
+                    <p>Email: <span class="email">techquizer@gmail.com</span></p>
+                    <p>Phone: <span class="phone">0241-2244500</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copbut">
+        <div class="copyright">
+            <p>&copy; 2024 Fourise Software Solutions Pvt. Ltd.</p>
+        </div>
+        <div class="social-media-icons">
+            <button type="button" class="social-icon"><img src="IMG/instagram.png" alt=""></button>
+            <button type="button" class="social-icon"><img src="IMG/facebook.png" alt=""></button>
+            <button type="button" class="social-icon"><img src="IMG/twitter.png" alt=""></button>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function toggleMenu() {
+    var headerLinks = document.getElementById("header-links");
+    var header = document.querySelector('.header');
+    header.classList.toggle('menu-open'); // Toggle menu-open class on header
+    if (headerLinks.style.display === "block") {
+        headerLinks.style.display = "none";
+    } else {
+        headerLinks.style.display = "block";
+    }
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

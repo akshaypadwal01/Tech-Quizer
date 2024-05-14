@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Student to Online Exam</title>
+<link rel="stylesheet" href="add_notice.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Notice </h2>
+        <form id="noticeForm">
+           <label for="noticeTitle">Notice Title:</label><br>
+            <input type="text" id="noticeTitle" name="noticeTitle" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="42" required></textarea><br>
+           
+            <div class="button-container">
+                <button type="button" onclick="addNotice()">Add Notice</button>
+                <button type="button" onclick="removeSelectedNotice()">Remove Notice</button>
+
+
+            </div>
+        </form>
+        <h3>Notice Added:</h3>
+        <table id="noticeTable">
+            <thead>
+                <tr>
+                    <th>Notice Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="noticeList"></tbody>
+        </table>
+    </div>
+    <script src="add_notice.js">
+         </script>
+</body>
+</html>

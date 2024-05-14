@@ -1,0 +1,506 @@
+body {
+    background-image: url('IMG/background5.webp');
+    background-size: 100% auto; /* Adjust width to 100% and height to auto */
+    background-position: center; /* Center the background image */
+    
+}
+
+
+
+
+
+.header {
+	overflow: hidden;
+	background-color: #26bbbc;
+	padding: 20px 25px;
+	display: flex; /* Display flex to align items in a row */
+	justify-content: space-between; /* Space between logo and header-right */
+	align-items: center; /* Center vertically */
+  }
+  
+  .header a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 31px;
+	padding: 12px;
+  }
+  
+  .header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	display: flex; /* To align image and text */
+	align-items: center; /* Center vertically */
+  }
+  
+  
+  .header a.active {
+	color: white;
+	margin: 5px;
+  }
+  .header a.active:hover {
+	background-color: rgb(160, 239, 190);
+	color: white;
+	margin: 5px;
+  }
+  
+  
+  .header-right {
+	display: flex; /* Display links horizontally */
+  }
+  
+  .logo img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-right: 25px;
+  }
+  
+  button {
+	background-color: #46CF9D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+  }
+  
+  button:hover {
+	opacity:1;
+  }
+  
+  button {
+	margin: 20px 0 0 40px; /* Adjust margin as needed */
+	padding: 10px 20px;
+	background-color: #a2efe5;
+	color: white;
+	font-size: 25px; /* Adjust font size as needed */
+	font-family: Arial, sans-serif; /* Adjust font family as needed */
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 25% 10%;
+	transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #78d0da;
+  }
+  button:active {
+	transform: scale(1.1); /* Zoom effect on button click */
+  }
+  
+  .hero-content {
+	z-index: 1;
+	margin-right: 810px;
+	margin-top: 37px;
+	border-radius: 25% 10%;
+  }
+  
+  
+  .toggle-button {
+	display: none; /* Hide the button by default */
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  
+/* sign up */
+body {
+    background-image: url('IMG/background5.webp');
+    background-size: 100% auto; /* Adjust width to 100% and height to auto */
+    background-position: center; /* Center the background image */
+    
+}
+.form-control {
+	height: 41px;
+	background: #f2f2f2;
+	box-shadow: none !important;
+	border: none;
+}
+.form-control:focus {
+	background: #e2e2e2;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 430px;
+	margin: 50px auto;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form h2  {
+	color: #333;
+	font-weight: bold;
+	margin-top: 0;
+}
+.signup-form hr  {
+	margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;
+	background: #3598dc;
+	border: none;
+	min-width: 140px;
+	margin: 0px;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #2389cd !important;
+	outline: none;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #3598dc;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.signup-form .hint-text  {
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+	background-color: #26bbbc;
+	color: white;
+	padding: 20px 0;
+  }
+  
+  .foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%; 
+	height: 80px; 
+  }
+  
+  .left-section {
+	display: flex;
+	align-items: center;
+	margin-left: 27px;
+  }
+  
+  .left-section img.logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+  }
+  
+  .heading1 {
+	font-size: 24px;
+  }
+  
+  .footer-content {
+	display: flex;
+	align-items: flex-start;
+  }
+  
+  .useful-links ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .useful-links ul li {
+	display: inline-block;
+	margin-right: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: larger;
+	font-stretch: expanded;
+  }
+  .useful-links ul li a {
+	margin-right: 15px;
+	color: rgb(64, 64, 246);
+  }
+  .useful-links ul li a:hover {
+	color: red; /* Change the color when hovered over */
+  }
+  
+  .contact-info {
+	margin-right: 20px;
+	margin-top: 24px;
+  }
+  .contact-info .info p {
+	margin-bottom: 4px; /* Adjust the value as needed */
+  }
+  
+  
+  .info{
+	  display: flex;
+	  flex-direction: column;
+	  column-gap: 10%;
+	margin-right: 50px;
+	margin-top: 10px;
+	}
+  
+  
+  .copbut {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .social-media-icons {
+	display: flex; /* Make the icons flex items */
+	align-items: center; /* Center them vertically */
+	margin-top: 25px;
+	margin-right: 120px;
+  }
+  
+  .social-media-icons button {
+	background-color: transparent;
+	border: none;
+	margin-right: -53px;
+	margin-top: -24px;
+  }
+  
+  .social-media-icons button img {
+	width: 30px;
+	height: 30px;
+  }
+  
+  .copyright {
+	margin-left: 26px;
+	margin-top: -30px;
+  }
+  
+  .useful-links {
+	margin-right: 20px; /* Adjust margin as needed */
+  }
+  
+  .useful-links ul {
+	list-style: none;
+	padding: 0;
+	margin-right: -256px;
+  }
+  
+  .useful-links ul li {
+	display: inline-block;
+	margin-right: 10px;
+	gap: 20px;
+  }
+  
+  
+  .buttons{
+	justify-self: flex-end;
+	align-self: flex-start;
+	margin-right: 170px;
+	display: flex;
+	gap: 20px;
+  }
+  .buttons button{
+	background-color: transparent;
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+	width:  40px;
+	border: none;
+	border-radius: 5px;
+	transition: transform 100ms ease-in-out;
+  }
+  .buttons button:hover{
+	background-color: green;
+	transform: scale(1.1);
+  }
+  .buttons button img{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+  }
+  button img:hover{
+	filter: invert(100%);
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+/* Media query for 600px viewport width */
+@media only screen and (max-width: 600px) {
+	.toggle-button {
+	  display: block;
+	}
+  
+	.header-links {
+	  display: none; /* Hide the links by default */
+	  position: absolute; /* Position the menu links absolutely */
+	  top: 10%; /* Position the menu links below the menu button */
+	  left: 0;
+	  margin-left: 234px;
+	  background-color: white;
+	  padding: 10px; /* Add padding for spacing */
+	  z-index: 1; /* Ensure links appear above other content */
+	  border-radius:5px;
+	}
+	.header a.active {
+	  color: black;
+	  margin: 5px;
+	}
+  
+	.header-links a {
+	  display: block; /* Display links as block to stack vertically */
+	  color: black;
+	  font-size: 16px; /* Set font size */  
+	}
+  
+	.header a.logo {
+	  margin-left: -24px;
+	  padding: 10px;
+	}
+
+
+
+
+	.signup-form {
+		width: 430px;
+		margin: 50px auto;
+	}
+	.signup-form form {
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 12px;
+    margin-right: 84px;
+	}
+
+
+
+	.footer {
+		padding: 20px 0;
+	  }
+	  
+	  .foot {
+		display: flex;
+		flex-direction: column; /* Change to column layout for mobile */
+		align-items: center; /* Center items vertically */
+		width: 100%; 
+		height: auto; /* Adjust height to fit content */
+	  }
+	  
+	  .left-section {
+		margin-bottom: 10px; /* Add some space below the logo */
+		margin-left: -154px;
+	  }
+	  
+	  .footer-content {
+		flex-direction: column; /* Change to column layout for mobile */
+		align-items: center; /* Center items horizontally */
+	  }
+	  
+	  .useful-links ul {
+		padding: 0;
+		text-align: center; /* Center the links */
+		margin-top: -48px;
+	  }
+	  
+	  .useful-links ul li {
+		display: block;
+		margin-bottom: 10px; /* Add space between links */
+	  }
+	  
+	  .contact-info .info {
+		margin-top: -26px;
+		margin-left: 76px;
+	  }
+	  .contact-info {
+		margin-top: -92px;
+		margin-left: -114px;
+	  }
+	  
+	  .copbut {
+		flex-direction: column; 
+	  }
+	  
+	  .social-media-icons {
+		margin-top: -88px;
+		margin-left: 27px;
+	  }
+	  
+	  .social-media-icons button {
+		margin: 0 -25px;
+	  }
+	  
+	
+	  
+	  .copyright {
+		margin-top: 47px;
+        margin-left: 2px;
+        margin-bottom: 5px;
+	  }
+	
+	
+	
+	  button {
+		padding: 12px 8px;
+		width: 100%;
+		opacity: 0.9;
+	  }
+	  
+	  button:hover {
+		opacity:1;
+	  }
+	  
+	  button {
+		margin: 20px 0 0 40px; 
+		padding: 10px 6px;
+		background-color: #597fd3;
+		font-size: 9px; 
+		margin-top: -8px;
+	  }
+	  
+	  .hero-content {
+		z-index: 1;
+		margin-right: 335px;
+		margin-top: 37px;
+	  }
+}  
+  
