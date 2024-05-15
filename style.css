@@ -143,7 +143,7 @@ button:active {
 .hero-section {
     position: relative;
     height: 80vh; /* Adjust as needed */
-    background-image: url('IMG/bg1.jpeg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-image: url('IMG/bg-image1.jpeg'); /* Replace 'your-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     color: #ffffff; /* Text color on top of the image */
