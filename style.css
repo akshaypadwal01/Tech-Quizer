@@ -179,7 +179,6 @@ button:active {
   justify-content: center;
   scale: 1; opacity: 0;
   animation: fade-in linear forwards;
-  animation-timeline: view();
   animation-duration: entry -50px;
   background-color:#c2d2e4;
 }
