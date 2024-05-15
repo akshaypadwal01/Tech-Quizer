@@ -153,4 +153,7 @@ p {
         margin-right: 0; /* Remove margin between boxes */
         margin-bottom: 20px; /* Add margin at the bottom of each box */
     }
+ #change-password-btn{
+     margin-right:-10px;
+ }
 }
