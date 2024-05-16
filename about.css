@@ -17,7 +17,7 @@ body {
       align-items: center;
       justify-content: space-between;
       z-index: 1000;
-      background-color: transparent; /* Initially transparent */
+      background-color: #a4ab83;
       transition: background-color 0.3s ease; /* Add transition for smooth effect */
   }
   
