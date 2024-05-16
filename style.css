@@ -621,9 +621,14 @@ footer {
 }
 
 .tests {
-  width: 28svw;
+  width: 63svw;
   height: 60svh;
   gap: 0px;
+}
+
+.tag-list .slide {
+  width: 310px;
+  height: 288px;
 }
 
 .scroller__inner {
